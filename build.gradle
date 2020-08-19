@@ -43,6 +43,12 @@ springBoot {
 release {
 	tagTemplate = 'v${version}'
 	git {
-		requireBranch = '/release|master/'
+		requireBranch = 'release|master'
+	}
+}
+
+task releasePushTag(dependsOn:tasks.release) {
+	exec {
+		commandLine 'git', 'push', '--tags', 'origin'
 	}
 }
