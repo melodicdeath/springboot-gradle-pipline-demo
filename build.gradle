@@ -42,14 +42,4 @@ springBoot {
 
 release {
 	tagTemplate = 'v${version}'
-	scmAdapters = [
-			net.researchgate.release.GitAdapter
-	]
-	git {
-		requireBranch = 'master'
-		pushToRemote = ''
-		pushToBranchPrefix = ''
-		commitVersionFileOnly = false
-		signTag = false
-	}
 }
