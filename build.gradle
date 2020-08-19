@@ -51,4 +51,8 @@ task releasePushTag(dependsOn:tasks.release) {
 	exec {
 		commandLine 'git', 'push', '--tags', 'origin'
 	}
+
+	doLast {
+		println('git push tag complete')
+	}
 }
