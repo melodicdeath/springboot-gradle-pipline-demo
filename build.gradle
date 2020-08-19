@@ -48,7 +48,7 @@ release {
 	]
 	git {
 		requireBranch = 'master'
-		pushToRemote = 'origin'
+		pushToRemote = 'https://github.com/melodicdeath/springboot-gradle-pipline-demo.git'
 		pushToBranchPrefix = ''
 		commitVersionFileOnly = false
 		signTag = false
