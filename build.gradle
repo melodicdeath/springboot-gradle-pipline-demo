@@ -42,4 +42,7 @@ springBoot {
 
 release {
 	tagTemplate = 'v${version}'
+	git {
+		requireBranch = '/release|master/'
+	}
 }
